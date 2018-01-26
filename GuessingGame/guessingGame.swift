@@ -10,7 +10,7 @@ import Foundation
 struct GuessingGame {
     
     
-    // Property
+    // Properties
     var numberToGuess : Int
     
     // Initializer

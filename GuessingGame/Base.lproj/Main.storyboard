@@ -34,7 +34,7 @@ Guess it!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42b-bo-r1N">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42b-bo-r1N">
                                 <rect key="frame" x="90" y="450" width="141" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -54,6 +54,7 @@ Guess it!</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonPlayAgain" destination="42b-bo-r1N" id="4Bz-9K-Kkb"/>
                         <outlet property="guessedNumber" destination="EX0-gg-okT" id="CCd-qW-nuZ"/>
                         <outlet property="labelMessage" destination="J0B-9w-ji5" id="CPZ-XH-0En"/>
                     </connections>

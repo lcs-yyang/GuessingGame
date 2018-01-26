@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var guessedNumber: UITextField!
     @IBOutlet weak var textFieldGuess: UITextField!
     @IBOutlet weak var labelMessage: UILabel!
+    @IBOutlet weak var buttonPlayAgain: UIButton!
     //MARK: Properties (variables)
     var game = GuessingGame()
     
@@ -61,6 +62,13 @@ class ViewController: UIViewController {
         // Compare the guess provided to the number to be guessed
         // if-else if-else
         labelMessage.text = game.compareNumbers(guessMade: guessedNumber)
+        
+        // Check for a win
+        if labelMessage.text == "You got it!" {
+            buttonPlayAgain.isHidden = false
+        }
+        
+        
     }
     
 }
